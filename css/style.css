@@ -25,7 +25,6 @@ footer, header, hgroup, menu, nav, section {
 
 body {
 	line-height: 1;
-	width: 100%;
 }
 
 ol, ul {
@@ -51,3 +50,174 @@ table {
 
 
 /* Write your css below here */
+
+*{
+	box-sizing: border-box;
+}
+
+.container{
+    /* background-color: #2f0232; */
+    height: 100vh;
+	width: 100vw;
+	overflow-x: hidden;
+} 
+
+a {
+    text-decoration: none;
+}
+a:hover, aside h1{
+    text-decoration: underline;
+}
+h1{
+    font-size: 30px;
+}
+h2{
+    font-size: 20px;
+}
+header{
+    background-color: seagreen;
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+img{
+    height: 90%;
+    width: 60px;
+    border-radius: 50%;
+}
+header nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+header a {
+    color: #2a033e;
+    margin-top: 5px;
+    justify-content: space-between;
+    padding: 10px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+section{
+    background-color: #05523b;
+    margin-top: 60px;
+    display: flex;
+	margin-bottom: 60px;
+	letter-spacing: 1px;
+	line-height: 30px;
+}
+
+main{
+    background-color: #284f04;
+    width: 100%;
+    padding: 1rem;
+    text-align: justify;
+} 
+
+aside{
+    background-color: #2c0231;
+    width: 100%;
+    padding: 1rem;
+} 
+
+footer{
+    background-color: rgb(49, 120, 54);
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+@media screen and (width <= 345px){
+	header{
+		height: 100px;
+	}
+
+	section{
+		margin-top: 100px;
+	}
+}
+
+@media screen and (width <= 768px){
+	header a {
+		font-size: 20px;
+	}
+
+	p {
+    font-size: 15px;
+	margin: auto;
+    line-height: 30px;
+   	}
+   
+   h1{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+   	} 
+
+	section{
+		flex-direction: column;
+		text-align: justify;
+	}
+}
+
+@media screen and (width >= 768px) {
+    p {
+        font-size: 15px;
+        margin: auto;
+        line-height: 40px;
+    }
+    
+    h1{
+        margin-top: 10px;
+        margin-bottom: 5px;
+    }
+
+	main{
+		width: 70%;
+	}
+
+	aside{
+		width: 30%;
+	}
+}
+
+@media screen and (width >= 992px) {
+	p {
+        font-size: 20px;
+        margin: auto;
+        line-height: 40px;
+    }
+    
+    section{
+        flex-direction: row;
+    }
+
+    main{
+        background-color: #2e3802;
+        width: 70%;
+        padding: 1rem;
+        float: left;
+
+    } 
+    
+    aside{
+        background-color: #aecf0b;
+        width: 30%;
+        padding: 1rem;
+        float: right;
+    }
+}
